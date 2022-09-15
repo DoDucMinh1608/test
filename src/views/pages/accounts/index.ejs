@@ -1,0 +1,20 @@
+<%- contentFor('title') %>
+ACCOUNTS
+
+<%- contentFor('init') %>
+<link rel="stylesheet" href=".././../css/stylesheets/accounts/style.css">
+<script src=".././../js/accounts/index.js" type="module" defer></script>
+
+<%- contentFor('body') %>
+<h1>accounts</h1>
+<form action="account/login" method="post">
+  <section class="form-input">
+    <label for="Password">username</label>
+    <input type="text" name="username" id="username">
+  </section>
+  <section class="form-input">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+  </section>
+  <input class="btn" type="submit" value="Confirm">
+</form>

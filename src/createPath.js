@@ -79,6 +79,9 @@ function initProject() {
   checkFolder(join(__dirname, 'views', 'partials'))
   addFile(join(__dirname, 'views', 'layouts', 'layout.ejs'), layout)
 }
+function addPath(path) {
+
+}
 function createFile(dir) {
   if (!dir) return
   initProject()
@@ -105,4 +108,3 @@ function createFile(dir) {
     }
   }
 }
-createFile('index')
